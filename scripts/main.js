@@ -97,7 +97,7 @@ var swiperProjects = new Swiper(".prototipos__container", {
             spaceBetween: 0,
         },
         1200: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: -56,
         },
     },

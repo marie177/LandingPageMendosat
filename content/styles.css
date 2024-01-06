@@ -277,6 +277,10 @@ button {
         width: 85px !important;
         right: 0 !important;
     }
+
+    .etapas__box {
+        width: 48% !important;
+    }
 }
 
 /* Show menu */
@@ -493,10 +497,9 @@ button {
 }
 
 .objetives__category {
-    margin-top: 0;
-    margin-bottom: 4rem;
+    margin: 0 15px 4rem;
     display: grid;
-    grid-template-columns: 200px;
+    /* grid-template-columns: 200px; */
     justify-content: space-between;
     row-gap: 2.5rem;
 }
@@ -1068,14 +1071,29 @@ button {
     :root {
         --biggest-font-size: 5rem;
     }
+
+    .button.projects__link{
+        width: 50%;    
+    }
+
+    .prototipos__container .blog__description {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 450px) {
     :root {
         --biggest-font-size: 3rem;
     }
-}
 
+    .button.projects__link{
+        font-size: var(--smaller-font-size);
+    padding: 10px;
+    }
+    .projects__link .icon {
+        font-size: 20px !important;
+    }
+}
 
 @media screen and (max-width: 576px) {
     .projects__img {
@@ -1093,6 +1111,25 @@ button {
         right: 0rem !important;
         top: 10rem !important;
     }
+
+    .etapas__box {
+        width: 100% !important;
+    }
+
+    .projects__container {
+        width: 70% !important;
+    }
+
+    .projects__sponsors .sponsor{
+        margin: 10px auto 0 !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects__sponsors .sponsor, .projects__sponsors .logo__img {
+        width: 120px !important;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -1101,10 +1138,7 @@ button {
         justify-content: space-evenly;
     }
 
-    .objetives__category {
-        grid-template-columns: repeat(2, 200px);
-        justify-content: space-between;
-    }
+
 
     .products__content {
         grid-template-columns: repeat(2, 200px);
@@ -1124,6 +1158,8 @@ button {
     .title {
         font-size: 24px;
     }
+
+
 
 }
 
@@ -1233,6 +1269,13 @@ button {
 
     .about_text {
         align-self: normal;
+    }
+
+    .objetives__category {
+        grid-template-columns: repeat(3, 30%);
+        justify-content: space-between;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -1431,6 +1474,7 @@ button {
     .scrollup {
         right: 3rem;
     }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -1573,8 +1617,8 @@ button {
 .projects__sponsors .sponsor{
     width: 100px;
     display: inline-block;
-    margin-top: 10px !important;
-    margin-right: 2px !important;
+    margin-top: 10px;
+    margin-right: 2px;
 }
 
 .projects__container {
@@ -1671,7 +1715,7 @@ button {
 }
 
 .etapas__box{
-    width: 300px;
+    width: 31%;
     border-top: 1px solid var(--first-color)
 }
 

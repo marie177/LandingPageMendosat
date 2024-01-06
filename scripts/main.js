@@ -132,6 +132,51 @@ var swiperProjects = new Swiper(".logo__container", {
     mousewheel: true,
     keyboard: true,
 });
+
+var swiperProjects = new Swiper(".equipo__container", {
+    /* debugger;*/
+    loop: true,
+    spaceBetween: 24,
+
+    autoplay:false,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    breakpoints: {
+        300: {
+            slidesPerView: 1.05,
+            spaceBetween: -56,
+        },
+        400: {
+            slidesPerView: 1.2,
+            spaceBetween: -56,
+        },
+        500: {
+            slidesPerView: 1.5,
+            spaceBetween: -56,
+        },
+        675: {
+            slidesPerView: 2,
+            spaceBetween: -56,
+        },
+        800: {
+            slidesPerView: 2,
+            spaceBetween: -56,
+        },
+        1000: {
+            slidesPerView: 3,
+            spaceBetween: -56,
+        },
+
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: -56,
+        },
+    },
+    mousewheel: false,
+    keyboard: true,
+});
+
 /*SCROLL UP*/
 
 function scrollUp() {

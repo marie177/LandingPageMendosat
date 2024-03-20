@@ -242,7 +242,7 @@ button {
     }
 
     #about {
-        background-color: #000000a6 !important;
+        background-color: #000000e0 !important;
     }
 
     .imgAbout {
@@ -1039,7 +1039,7 @@ button {
     }
 
     #about {
-        background-color: #0000009c;
+        background-color: #000000e0;
     }
 
     .imgAbout {
@@ -1072,8 +1072,8 @@ button {
         --biggest-font-size: 5rem;
     }
 
-    .button.projects__link{
-        width: 50%;    
+    .button.projects__link {
+        width: 50%;
     }
 
     .prototipos__container .blog__description {
@@ -1086,10 +1086,11 @@ button {
         --biggest-font-size: 3rem;
     }
 
-    .button.projects__link{
+    .button.projects__link {
         font-size: var(--smaller-font-size);
-    padding: 10px;
+        padding: 10px;
     }
+
     .projects__link .icon {
         font-size: 20px !important;
     }
@@ -1120,15 +1121,32 @@ button {
         width: 70% !important;
     }
 
-    .projects__sponsors .sponsor{
+    .projects__sponsors .sponsor {
         margin: 10px auto 0 !important;
         display: flex !important;
         justify-content: center;
         align-items: center;
     }
 
-    .projects__sponsors .sponsor, .projects__sponsors .logo__img {
-        width: 120px !important;
+    .projects__sponsors .sponsor,
+    .projects__sponsors .logo__img {
+        width: 80px !important;
+    }
+
+    .projects__description {
+        height: 50% !important;
+    }
+
+    .projects__container {
+        height: 360px !important;
+    }
+
+    .projects__title{
+        font-size: var(--small-font-size) !important;
+     }
+
+     .projects__sponsors .sponsor, .projects__sponsors .logo__img {
+        width: 60px !important;
     }
 }
 
@@ -1604,19 +1622,32 @@ button {
     margin: 0 AUTO;
 }
 
-.projects__description, .projects__sponsors {
-    font-size: 13px;
+.projects__description {
+    height: 35%;
 }
 
-.projects__sponsors{
+.projects__description,
+.projects__sponsors {
+    font-size: 13px;
+    text-align: left;
+}
+
+.projects__sponsors {
     text-align: left;
     margin: 10px 0;
     color: var(--first-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.projects__sponsors .sponsor{
+.projects__sponsors .title__sponsor {
+    flex-basis: 100%;
+}
+
+.projects__sponsors .sponsor {
     width: 100px;
-    display: inline-block;
     margin-top: 10px;
     margin-right: 2px;
 }
@@ -1628,6 +1659,7 @@ button {
     padding: 25px;
     text-align: center;
     width: 275px;
+    height: 315px;
 }
 
 .projects__subtitle {
@@ -1701,42 +1733,42 @@ button {
     margin-bottom: 0;
 }
 
-.prototipos__container .blog__description{
+.prototipos__container .blog__description {
     width: 50%;
 }
 
 /* -- ETAPAS DEL PROYECTO */
 
-.etapas__container{
+.etapas__container {
     display: flex;
     gap: 25px 15px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.etapas__box{
+.etapas__box {
     width: 31%;
     border-top: 1px solid var(--first-color)
 }
 
-.etapas__month{
+.etapas__month {
     font-weight: 800;
     font-size: 1.3em;
     margin-top: 10px;
 }
 
-.etapas__name{
+.etapas__name {
     color: var(--first-color);
     margin-bottom: 15px;
 }
 
-.etapas__description{
+.etapas__description {
     text-align: left;
     margin-bottom: 6px;
     color: var(--first-color)
 }
 
-.etapas__box-etapa-final{
+.etapas__box-etapa-final {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1744,7 +1776,7 @@ button {
     border: none;
 }
 
-.etapas__box-etapa-final .rocket{
+.etapas__box-etapa-final .rocket {
     width: 100px;
     margin-bottom: 10px;
 }

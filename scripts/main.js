@@ -169,7 +169,7 @@ var swiperProjects = new Swiper(".equipo__container", {
         },
 
         1200: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: -56,
         },
     },

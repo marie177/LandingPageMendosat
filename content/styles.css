@@ -348,7 +348,7 @@ button {
 
 .home__data {
     border-top: 1px solid var(--text-color);
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
